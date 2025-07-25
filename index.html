@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bucks2Bar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" style="font-size: 2rem;">Bucks2Bar</a>
+        </div>
+    </nav>
+    
+    <header class="bg-primary text-white text-center py-5">
+        <h1>Welcome to Bucks2Bar project!</h1>
+        <p>This is my first test project using github copilot chat.</p>
+    </header>
+    <main class="container mt-5">
+        <!-- Bootstrap Tabs -->
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="data-tab" data-bs-toggle="tab" data-bs-target="#data" type="button" role="tab" aria-controls="data" aria-selected="true">Data</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="chart-tab" data-bs-toggle="tab" data-bs-target="#chart" type="button" role="tab" aria-controls="chart" aria-selected="false">Chart</button>
+            </li>
+        </ul>
+        <div class="tab-content mt-3" id="myTabContent">
+            <div class="tab-pane fade show active" id="data" role="tabpanel" aria-labelledby="data-tab">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <h5>January</h5>
+                        <div class="row mb-2">
+                            <div class="col-6">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="income-january-label">Income</span>
+                                    <input type="integer" step="1" class="form-control" id="income-january" placeholder="Enter income" aria-label="Income" aria-describedby="income-january-label" inputmode="numeric" onwheel="this.blur()">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="expenses-january-label">Expenses</span>
+                                    <input type="integer" step="1" class="form-control" id="expenses-january" placeholder="Enter expenses" aria-label="Expenses" aria-describedby="expenses-january-label" inputmode="numeric" onwheel="this.blur()">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <h5>February</h5>
+                        <div class="row mb-2">
+                            <div class="col-6">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="income-february-label">Income</span>
+                                    <input type="integer" step="1" class="form-control" id="income-february" placeholder="Enter income" aria-label="Income" aria-describedby="income-february-label" inputmode="numeric" onwheel="this.blur()">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="expenses-february-label">Expenses</span>
+                                    <input type="integer" step="1" class="form-control" id="expenses-february" placeholder="Enter expenses" aria-label="Expenses" aria-describedby="expenses-february-label" inputmode="numeric" onwheel="this.blur()">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <h5>March</h5>
+                        <div class="row mb-2">
+                            <div class="col-6">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="income-march-label">Income</span>
+                                    <input type="integer" step="1" class="form-control" id="income-march" placeholder="Enter income" aria-label="Income" aria-describedby="income-march-label" inputmode="numeric" onwheel="this.blur()">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="expenses-march-label">Expenses</span>
+                                    <input type="integer" step="1" class="form-control" id="expenses-march" placeholder="Enter expenses" aria-label="Expenses" aria-describedby="expenses-march-label" inputmode="numeric" onwheel="this.blur()">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <h5>April</h5>
+                        <div class="row mb-2">
+                            <div class="col-6">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="income-april-label">Income</span>
+                                    <input type="integer" step="1" class="form-control" id="income-april" placeholder="Enter income" aria-label="Income" aria-describedby="income-april-label" inputmode="numeric" onwheel="this.blur()">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="expenses-april-label">Expenses</span>
+                                    <input type="integer" step="1" class="form-control" id="expenses-april" placeholder="Enter expenses" aria-label="Expenses" aria-describedby="expenses-april-label" inputmode="numeric" onwheel="this.blur()">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <h5>May</h5>
+                        <div class="row mb-2">
+                            <div class="col-6">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="income-may-label">Income</span>
+                                    <input type="integer" step="1" class="form-control" id="income-may" placeholder="Enter income" aria-label="Income" aria-describedby="income-may-label" inputmode="numeric" onwheel="this.blur()">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="expenses-may-label">Expenses</span>
+                                    <input type="integer" step="1" class="form-control" id="expenses-may" placeholder="Enter expenses" aria-label="Expenses" aria-describedby="expenses-may-label" inputmode="numeric" onwheel="this.blur()">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <h5>June</h5>
+                        <div class="row mb-2">
+                            <div class="col-6">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="income-june-label">Income</span>
+                                    <input type="integer" step="1" class="form-control" id="income-june" placeholder="Enter income" aria-label="Income" aria-describedby="income-june-label" inputmode="numeric" onwheel="this.blur()">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="expenses-june-label">Expenses</span>
+                                    <input type="integer" step="1" class="form-control" id="expenses-june" placeholder="Enter expenses" aria-label="Expenses" aria-describedby="expenses-june-label" inputmode="numeric" onwheel="this.blur()">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <h5>July</h5>
+                        <div class="row mb-2">
+                            <div class="col-6">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="income-july-label">Income</span>
+                                    <input type="integer" step="1" class="form-control" id="income-july" placeholder="Enter income" aria-label="Income" aria-describedby="income-july-label" inputmode="numeric" onwheel="this.blur()">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="expenses-july-label">Expenses</span>
+                                    <input type="integer" step="1" class="form-control" id="expenses-july" placeholder="Enter expenses" aria-label="Expenses" aria-describedby="expenses-july-label" inputmode="numeric" onwheel="this.blur()">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <h5>August</h5>
+                        <div class="row mb-2">
+                            <div class="col-6">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="income-august-label">Income</span>
+                                    <input type="integer" step="1" class="form-control" id="income-august" placeholder="Enter income" aria-label="Income" aria-describedby="income-august-label" inputmode="numeric" onwheel="this.blur()">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="expenses-august-label">Expenses</span>
+                                    <input type="integer" step="1" class="form-control" id="expenses-august" placeholder="Enter expenses" aria-label="Expenses" aria-describedby="expenses-august-label" inputmode="numeric" onwheel="this.blur()">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <h5>September</h5>
+                        <div class="row mb-2">
+                            <div class="col-6">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="income-september-label">Income</span>
+                                    <input type="integer" step="1" class="form-control" id="income-september" placeholder="Enter income" aria-label="Income" aria-describedby="income-september-label" inputmode="numeric" onwheel="this.blur()">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="expenses-september-label">Expenses</span>
+                                    <input type="integer" step="1" class="form-control" id="expenses-september" placeholder="Enter expenses" aria-label="Expenses" aria-describedby="expenses-september-label" inputmode="numeric" onwheel="this.blur()">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <h5>October</h5>
+                        <div class="row mb-2">
+                            <div class="col-6">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="income-october-label">Income</span>
+                                    <input type="integer" step="1" class="form-control" id="income-october" placeholder="Enter income" aria-label="Income" aria-describedby="income-october-label" inputmode="numeric" onwheel="this.blur()">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="expenses-october-label">Expenses</span>
+                                    <input type="integer" step="1" class="form-control" id="expenses-october" placeholder="Enter expenses" aria-label="Expenses" aria-describedby="expenses-october-label" inputmode="numeric" onwheel="this.blur()">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <h5>November</h5>
+                        <div class="row mb-2">
+                            <div class="col-6">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="income-november-label">Income</span>
+                                    <input type="integer" step="1" class="form-control" id="income-november" placeholder="Enter income" aria-label="Income" aria-describedby="income-november-label" inputmode="numeric" onwheel="this.blur()">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="expenses-november-label">Expenses</span>
+                                    <input type="integer" step="1" class="form-control" id="expenses-november" placeholder="Enter expenses" aria-label="Expenses" aria-describedby="expenses-november-label" inputmode="numeric" onwheel="this.blur()">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <h5>December</h5>
+                        <div class="row mb-2">
+                            <div class="col-6">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="income-december-label">Income</span>
+                                    <input type="integer" step="1" class="form-control" id="income-december" placeholder="Enter income" aria-label="Income" aria-describedby="income-december-label" inputmode="numeric" onwheel="this.blur()">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="expenses-december-label">Expenses</span>
+                                    <input type="integer" step="1" class="form-control" id="expenses-december" placeholder="Enter expenses" aria-label="Expenses" aria-describedby="expenses-december-label" inputmode="numeric" onwheel="this.blur()">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="chart" role="tabpanel" aria-labelledby="chart-tab">
+                                <canvas id="barChart" width="400" height="200"></canvas>
+            <div class="mt-3">
+                <button id="downloadChart" class="btn btn-success">
+                    Download Chart
+                </button>
+            </div>
+            <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    const downloadBtn = document.getElementById('downloadChart');
+                    const chartCanvas = document.getElementById('barChart');
+                    if (downloadBtn && chartCanvas) {
+                        downloadBtn.addEventListener('click', function () {
+                            const link = document.createElement('a');
+                            link.href = chartCanvas.toDataURL('image/png');
+                            link.download = 'chart.png';
+                            link.click();
+                        });
+                    }
+                });
+            </script>
+                            </div>
+        </div>
+    </main>
+    <footer class="text-center py-4">
+        <p>&copy; 2025 Bucks2Bar. All rights reserved.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+</html>
